@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.czw.demo.mapper.GoodMapper">
+
+    <insert id="insertGood">
+        insert into t_good
+        (good_id, good_name, good_price, good_total, good_describe)
+        values (#{goodId}, #{goodName}, #{goodPrice}, #{goodTotal}, #{goodDescribe})
+    </insert>
+
+    <update id="updateGoodTotal">
+        update t_good set good_total = #{goodTotal}
+        where good_id = #{goodId}
+    </update>
+
+    <select id="selectGood" resultType="com.czw.demo.domain.GoodDTO">
+        select * from t_good where good_id = #{goodId}
+    </select>
+
+</mapper>
