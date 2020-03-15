@@ -7,7 +7,7 @@ SpringBoot+Redis+RabbitMQ 实现秒杀系统的小demo
 
 1、项目源码下载下来后，直接启动RedisDemoApplication即可，相关配置可在application.properties配置文件中可以进行修改；
 
-2、项目继承了Redis和RabbitMQ，如果本地需要启动的话需要预先安装下，网上一搜都有windows安装的，方便；
+2、项目集成了Redis和RabbitMQ，如果本地需要启动的话需要预先安装下，网上一搜都有windows安装的，方便；
 
 3、使用的Mysql作为数据库，t_good表和t_order表存储商品信息和订单信息，表结构字段可在代码里面domain的实体类中查看，一一对应的；
 
